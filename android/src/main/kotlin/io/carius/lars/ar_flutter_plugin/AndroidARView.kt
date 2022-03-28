@@ -414,7 +414,7 @@ internal class AndroidARView(
 
         try {
             arSceneView.resume()
-        } catch (ex: CameraNotAvailableException) {
+        } catch (ex: Exception) {
             Log.d(TAG, "Unable to get camera" + ex)
             activity.finish()
             return
